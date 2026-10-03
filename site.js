@@ -1,3 +1,5 @@
+// Launch day: put the App Store link here (one line). While it is empty the badges say "Coming soon".
+const APP_STORE_URL = "";
 (function(){
 const $=(s)=>document.querySelector(s), $$=(s)=>document.querySelectorAll(s);
 const S={d:0,p:false,week:1,shelf:0,plan:'yr',cur:'INR'};
@@ -37,4 +39,12 @@ $$('[data-plan]').forEach(b=>b.addEventListener('click',()=>{S.plan=b.dataset.pl
 $$('[data-cur]').forEach(b=>b.addEventListener('click',()=>{S.cur=b.dataset.cur;renderPro();}));
 $('#replay66').addEventListener('click',()=>{const g=$('#goldcard');g.classList.remove('play66');void g.offsetWidth;g.classList.add('play66');});
 render();renderPro();
+})();
+(function(){
+ if(!APP_STORE_URL) return;
+ document.querySelectorAll('[data-store]').forEach(function(el){
+  var a=document.createElement('a');a.className=el.className;a.href=APP_STORE_URL;a.setAttribute('data-store','');
+  a.setAttribute('aria-label','Download Sprout on the App Store');
+  a.innerHTML=el.innerHTML.replace('Coming soon on the','Download on the');el.replaceWith(a);});
+ var cta=document.getElementById('cta');if(cta)cta.href=APP_STORE_URL;
 })();
