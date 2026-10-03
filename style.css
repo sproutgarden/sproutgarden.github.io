@@ -115,3 +115,36 @@ footer{background:#3A3029;color:#D9CDBF;padding:34px 0;border-top:6px solid #B48
 }
 @media (max-width:700px){nav .links a{display:none}}
 @media (max-width:480px){.h1{font-size:44px!important}.phone{transform:scale(.82);margin:-40px 0}.timeline{max-width:100%}.days{padding-right:60px}.day svg{width:44px;height:64px}}
+
+/* ===== mobile fixes (iPhone widths) ===== */
+@media (max-width:960px){
+  .gallery{justify-content:flex-start;gap:18px;padding:30px 20px 50px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+  .gphone{scroll-snap-align:center;transform:none!important}
+  .gphone .fr{width:min(232px,64vw);height:auto;aspect-ratio:1179/2556}
+  .gphone img{object-fit:contain;background:#FFF6EA}
+  .nightwin{width:100%;max-width:520px;height:auto;aspect-ratio:520/600;margin:0 auto}
+  .nightwin>div{left:auto!important;top:auto!important;width:26%}
+  .nightwin>div:nth-of-type(2){left:22%!important;bottom:7%!important;width:27%}
+  .nightwin>div:nth-of-type(3){left:55%!important;bottom:7%!important;width:30%}
+  .nightwin>.breathe{left:50%!important;bottom:10%!important;width:50%;aspect-ratio:1;height:auto!important;margin-left:-5%}
+  .nightwin>div svg{width:100%!important;height:auto!important}
+  .goldcard{aspect-ratio:1;height:auto;max-height:none}
+  .goldpot{width:56%;height:auto;aspect-ratio:2/3;top:46%;margin:-36% 0 0 -28%}
+  .goldpot svg{width:100%!important;height:100%!important}
+  .stamp66{width:96px;height:96px;left:16px;top:16px}.stamp66 .h{font-size:42px!important}.stamp66 .hand{font-size:16px!important}
+  .faq>div:first-child{text-align:center}.faq>div:first-child>div:last-child{display:flex;justify-content:center}
+}
+@media (max-width:700px){
+  .timeline .line{right:0}
+  .days{padding-right:0}
+  .next{position:static;display:block;margin:14px 0 0 auto}
+  .timeline{margin-top:20px}
+  .note{gap:14px}.mini{width:96px;height:134px}.mini svg{width:90px;height:136px}
+  .phone{transform:scale(.9);margin:-36px 0 -36px}
+}
+@media (max-width:480px){
+  .phone{transform:scale(.82);margin:-65px 0 -65px}
+  .hero-in{padding-top:20px}
+  .sec{padding:64px 0}.title{font-size:32px}.kick{font-size:24px}
+  .packs{scroll-snap-type:x proximity}
+}
