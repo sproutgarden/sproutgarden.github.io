@@ -212,3 +212,13 @@ footer{background:#3A3029;color:#D9CDBF;padding:34px 0;border-top:6px solid #B48
   .sill>svg{width:100%;height:auto}
   .sill>div{grid-column:1/-1;margin-left:0!important;text-align:center!important;padding-top:6px}
 }
+
+
+/* ===== snowy shelf: live window on the Shelf phone ===== */
+.gphone .fr{height:auto!important;aspect-ratio:auto!important}
+.gphone .fr img{height:auto!important;object-fit:fill!important;aspect-ratio:1206/2622}
+.live{position:relative;border-radius:30px;overflow:hidden}
+.live>img{display:block;width:100%;height:auto}
+.wcard{position:absolute;left:4.892%;top:26.39%;width:90.05%;height:37.45%;border-radius:3.4%/3.7%;overflow:hidden}
+.wcard svg{display:block;width:100%;height:100%}
+.wcard.is-off *{animation-play-state:paused!important}

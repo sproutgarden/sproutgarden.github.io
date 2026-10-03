@@ -52,3 +52,8 @@ render();renderPro();
 /* play the golden celebration when it scrolls into view */
 (function(){var g=document.getElementById('goldcard');if(!g||!('IntersectionObserver' in window))return;var done=false;
 new IntersectionObserver(function(es,o){es.forEach(function(e){if(e.isIntersecting&&!done){done=true;g.classList.add('play66');o.disconnect();}});},{threshold:.55}).observe(g);})();
+
+
+/* the snowy shelf only animates while it is on screen */
+(function(){var w=document.querySelector('.wcard');if(!w||!('IntersectionObserver' in window))return;
+new IntersectionObserver(function(es){es.forEach(function(e){w.classList.toggle('is-off',!e.isIntersecting);});},{threshold:0}).observe(w);})();
