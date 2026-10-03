@@ -18,7 +18,7 @@ function render(){const d=S.d,stage=1+d,checked=d>=1&&S.p;
  $('#note').textContent=d===0?'water it every day to bloom':(d<6?(7-d)+' more to bloom':(d===6?'1 more and it blooms!':'in full bloom this week'));
  $('#checkin').style.display=d===0?'':'none';$('#done').style.display=d>=1?'flex':'none';
  $('#next').textContent=d>=7?'\u21bb':'\u25B6';
- $('#dayLabel').textContent=labels[d]+(d?' \u00b7 week '+S.week:'');$('#title').textContent=titles[d];$('#story').textContent=story[d];
+ $('#dayLabel').textContent=labels[d]+(d?' \u00b7 week '+S.week:'');$('#title').textContent=titles[d];{const cap=$('#tlcap');if(cap)cap.textContent=d?(labels[d]+' \u00b7 '+titles[d]):'Tap a day to grow the bonsai';}$('#story').textContent=story[d];
  const pp=checked?1:0,th=Math.PI-pp*Math.PI/2,cc=Math.cos(th),sn=Math.sin(th);
  const sun=$('#sr-sun');sun.style.transition='transform 1.4s cubic-bezier(.3,1,.4,1)';sun.style.transform='translate('+(159+113*cc)+'px,'+(92-56*sn)+'px)';
  const op=(el,v,t)=>{el.style.transition='opacity '+(t||1)+'s';el.style.opacity=v;};
@@ -48,3 +48,7 @@ render();renderPro();
   a.innerHTML=el.innerHTML.replace('Coming soon on the','Download on the');el.replaceWith(a);});
  var cta=document.getElementById('cta');if(cta)cta.href=APP_STORE_URL;
 })();
+
+/* play the golden celebration when it scrolls into view */
+(function(){var g=document.getElementById('goldcard');if(!g||!('IntersectionObserver' in window))return;var done=false;
+new IntersectionObserver(function(es,o){es.forEach(function(e){if(e.isIntersecting&&!done){done=true;g.classList.add('play66');o.disconnect();}});},{threshold:.55}).observe(g);})();
