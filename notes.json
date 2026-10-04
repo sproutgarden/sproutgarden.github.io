@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "notes": [
+    {
+      "id": "hello-2026-10",
+      "date": "2026-10-04",
+      "kind": "hello",
+      "title": "Hello from the gardener",
+      "excerpt": "I make Sprout on my own, one little plant at a time. This post box is where I will tell you what is new.",
+      "body": [
+        "Hi! I am Hirdyansh, and I make Sprout on my own, here in India.",
+        "This little post box is where I will write to you now and then: what is new in your garden, small tips, and sometimes a question.",
+        "Thank you for growing something with me."
+      ],
+      "button": { "label": "Write to me", "action": "feedback" }
+    },
+    {
+      "id": "rate-2026-10",
+      "date": "2026-10-04",
+      "kind": "rate",
+      "title": "Could you help Sprout grow?",
+      "excerpt": "If Sprout makes your days a little brighter, a rating helps others find it.",
+      "body": [
+        "If Sprout has made your days a little brighter, a rating on the App Store helps more people find it.",
+        "It takes ten seconds, and it means a lot to a tiny app made by one person. No pressure, ever."
+      ],
+      "button": { "label": "Rate Sprout", "action": "rate" }
+    }
+  ]
+}
