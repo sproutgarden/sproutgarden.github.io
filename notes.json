@@ -2,18 +2,6 @@
   "version": 1,
   "notes": [
     {
-      "id": "test-2026-10-05",
-      "date": "2026-10-05",
-      "kind": "tip",
-      "title": "A little test letter",
-      "excerpt": "This is a test of the Garden Post. If you can read this, the post box works.",
-      "body": [
-        "This is only a test letter, to check that new letters reach every garden.",
-        "It will be gone again soon. Thank you for growing with me."
-      ],
-      "button": { "label": "Open the Shop", "action": "shop" }
-    },
-    {
       "id": "hello-2026-10",
       "date": "2026-10-04",
       "kind": "hello",
