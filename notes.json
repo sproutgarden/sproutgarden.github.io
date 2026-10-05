@@ -2,17 +2,38 @@
   "version": 1,
   "notes": [
     {
+      "id": "early-2026-10",
+      "date": "2026-10-05",
+      "kind": "update",
+      "title": "Sprout is just getting started",
+      "excerpt": "This is version 1, and your garden is still young. Much more is on its way.",
+      "body": [
+        "Sprout is on version 1, which means it is still very early in its life.",
+        "There is a lot more coming: new plants, new views and many small touches, and we will keep polishing every corner of the app.",
+        "If you find a bug, or have an idea or a kind word to share, please write to us at sproutgardensupport@gmail.com. We read every message.",
+        "Stay tuned, and thank you for growing with us."
+      ],
+      "button": {
+        "label": "Write to us",
+        "action": "feedback"
+      }
+    },
+    {
       "id": "hello-2026-10",
       "date": "2026-10-04",
       "kind": "hello",
       "title": "Hello from the gardener",
-      "excerpt": "I make Sprout on my own, one little plant at a time. This post box is where I will tell you what is new.",
+      "excerpt": "A small post box for a small garden. This is where I will tell you what is new, now and then.",
       "body": [
-        "Hi! I am Hirdyansh, and I make Sprout on my own, here in India.",
-        "This little post box is where I will write to you now and then: what is new in your garden, small tips, and sometimes a question.",
-        "Thank you for growing something with me."
+        "Hi, I am Hirdyansh, the gardener behind Sprout.",
+        "Every plant, every pot and every little detail here is made with care, so your habits can grow at their own gentle pace.",
+        "This post box is where I will write to you now and then: what is new in your garden, small tips, and sometimes a question.",
+        "Thank you for planting something with me."
       ],
-      "button": { "label": "Write to me", "action": "feedback" }
+      "button": {
+        "label": "Write to me",
+        "action": "feedback"
+      }
     },
     {
       "id": "rate-2026-10",
@@ -24,7 +45,10 @@
         "If Sprout has made your days a little brighter, a rating on the App Store helps more people find it.",
         "It takes ten seconds, and it means a lot to a tiny app made by one person. No pressure, ever."
       ],
-      "button": { "label": "Rate Sprout", "action": "rate" }
+      "button": {
+        "label": "Rate Sprout",
+        "action": "rate"
+      }
     }
   ]
 }
