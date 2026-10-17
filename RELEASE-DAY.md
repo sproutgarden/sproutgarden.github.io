@@ -56,11 +56,12 @@ These are every line that was softened, in `index.html`. The first column is wha
 | Shop paragraph | `The Shop will have two tabs, Seeds and Scenes, and everything in it will be bought with Sunlight you earned. Tap a packet to watch it grow.` | `The Shop has two tabs, Seeds and Scenes, and everything in it is bought with Sunlight you earned. Tap a packet to watch it grow.` |
 | Sunlight card | `Spend it on seeds and, with 1.1, scenes.` | `Spend it on seeds and scenes.` |
 | Pro paragraph | `and for the Pro collection: four rare seeds today, and three scenes in 1.1.` | `and for the Pro collection: four rare seeds and three scenes.` |
-| Pro list item | `and the Moonbloom, and, in 1.1, the Lake dock, Rainy terrace and Fuji veranda scenes</li>` | `and the Moonbloom, and the Lake dock, Rainy terrace and Fuji veranda scenes</li>` |
+| Pro list item | `and the Moonbloom, and, in 1.1, the Lake dock` | `and the Moonbloom, and the Lake dock` |
 | Gold pot paragraph | `with a running total, and from 1.1 in whichever scene you choose.` | `with a running total, in whichever scene you have chosen.` |
 | What's new bullet 1 | `The window and its views will become scenes:` | `The window and its views have become scenes:` |
 | What's new bullet 2 | `All ten plants and their pots will be painted, stage by stage, on Today, on the Shelf and in the Shop.` | `All ten plants and their pots are painted now, stage by stage, on Today, on the Shelf and in the Shop.` |
-| What's new bullet 3 | `Rain and drifting clouds, falling leaves, fireflies, a butterfly now and then and a hot air balloon will bring the scenes to life, and the plants will sway in the breeze.` | `Rain and drifting clouds, falling leaves, fireflies, a butterfly now and then, a hot air balloon, and plants that sway in the breeze.` |
+| What's new bullet 3 (a) | `Each scene will move in its own way:` | `Each scene moves in its own way:` |
+| What's new bullet 3 (b) | `The plants will sway in every scene.` | `The plants sway in every scene.` |
 | What's new bullet 4 | `Your first minutes in Sprout will open on a painted window, from a dark room to a golden evening.` | `Your first minutes in Sprout open on a painted window, from a dark room to a golden evening.` |
 
 Do it with this script (it stops if any line is not found exactly once):
@@ -89,8 +90,8 @@ pairs=[
   "and for the Pro collection: four rare seeds and three scenes."
  ],
  [
-  "and the Moonbloom, and, in 1.1, the Lake dock, Rainy terrace and Fuji veranda scenes</li>",
-  "and the Moonbloom, and the Lake dock, Rainy terrace and Fuji veranda scenes</li>"
+  "and the Moonbloom, and, in 1.1, the Lake dock",
+  "and the Moonbloom, and the Lake dock"
  ],
  [
   "with a running total, and from 1.1 in whichever scene you choose.",
@@ -105,8 +106,12 @@ pairs=[
   "All ten plants and their pots are painted now, stage by stage, on Today, on the Shelf and in the Shop."
  ],
  [
-  "Rain and drifting clouds, falling leaves, fireflies, a butterfly now and then and a hot air balloon will bring the scenes to life, and the plants will sway in the breeze.",
-  "Rain and drifting clouds, falling leaves, fireflies, a butterfly now and then, a hot air balloon, and plants that sway in the breeze."
+  "Each scene will move in its own way:",
+  "Each scene moves in its own way:"
+ ],
+ [
+  "The plants will sway in every scene.",
+  "The plants sway in every scene."
  ],
  [
   "Your first minutes in Sprout will open on a painted window, from a dark room to a golden evening.",
