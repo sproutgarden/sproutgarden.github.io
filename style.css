@@ -54,7 +54,7 @@ nav .links{display:flex;align-items:center;gap:22px;font-weight:800;color:var(--
 .gold-in{display:flex;align-items:center;gap:60px}
 .goldcard{position:relative;width:520px;height:520px;flex-shrink:0;border-radius:40px;overflow:hidden;background:radial-gradient(circle at 50% 60%,#FFF4C8 0%,#FFE39A 45%,#F5C96A 100%);box-shadow:0 30px 70px rgba(150,100,20,.25)}
 .goldpot{position:absolute;left:50%;top:50%;width:250px;height:375px;margin:-220px 0 0 -125px}.goldpot svg{position:absolute;inset:0}
-.goldfill{clip-path:inset(100% 0 0 0);filter:sepia(1) saturate(3) hue-rotate(-12deg) brightness(1.08)}
+.goldfill{clip-path:inset(100% 0 0 0)}
 .ring{position:absolute;left:50%;top:58%;width:40px;height:40px;margin:-20px 0 0 -20px;border-radius:50%;border:3px solid var(--gold);opacity:0}
 .stamp66{position:absolute;left:34px;top:34px;width:132px;height:132px;border-radius:50%;border:5px solid #B8761A;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#B8761A;opacity:0}
 .conf66{position:absolute;left:50%;top:50%;width:10px;height:14px;border-radius:3px;opacity:0}
@@ -247,3 +247,10 @@ footer .wrap{flex-wrap:wrap;gap:18px}
 .pack .protag{display:table;margin:3px 0 0}
 @media (min-width:961px){.packs{gap:10px}.pack{width:108px}.pack .win{height:132px}.pack .pimg{width:72px;height:auto}}
 @media (min-width:961px){.packs{gap:8px;justify-content:center;padding:0 0 20px}.pack{width:102px}.pack button,.pack .body{padding:0 8px 10px}.pack .crimp{margin:0 -8px}.pack .pimg{width:68px}}
+
+/* ===== 1.1 pre-release pill: ONE class. On release day delete every element with class v11-tag and this block ===== */
+.v11-tag{display:inline-block;vertical-align:middle;margin-left:10px;padding:4px 12px;border-radius:99px;background:#FFF0C4;color:#8A5A16;border:1px dashed #E0B85A;font:700 13px/1.3 'Nunito',sans-serif;letter-spacing:.04em;text-transform:none;white-space:nowrap}
+.gphone .v11-tag{display:table;margin:2px auto 0}
+.pro li .v11-tag,.pro-in li .v11-tag{margin-left:6px;font-size:11px}
+/* painted sprites keep ~8% transparent space under the pot: let the pot touch the plank */
+.closesill .pots>svg,.sill>svg{transform:translateY(8.7%)}
