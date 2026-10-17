@@ -239,3 +239,13 @@ footer{background:#3A3029;color:#D9CDBF;padding:34px 0;border-top:6px solid #B48
 @media (max-width:560px){.scenelist{grid-template-columns:1fr}.store img{height:48px}}
 footer .wrap{flex-wrap:wrap;gap:18px}
 @media (min-width:961px){.gallery{gap:14px}.gphone .fr{width:196px;height:415px}}
+
+/* ===== painted plants in the demo, shop packets ===== */
+.pack .win .pimg{display:block;margin-bottom:-10px;position:relative;z-index:1}
+.play .pimg{animation:growpop 1.6s cubic-bezier(.3,1.4,.5,1) both}
+@keyframes growpop{0%{transform:scale(.45) translateY(10px);opacity:.2}60%{transform:scale(1.06)}100%{transform:none;opacity:1}}
+@media (prefers-reduced-motion:reduce){.play .pimg{animation:none}}
+.pack{width:128px}
+.pack .protag{display:table;margin:3px 0 0}
+@media (min-width:961px){.packs{gap:10px}.pack{width:108px}.pack .win{height:132px}.pack .pimg{width:72px;height:auto}}
+@media (min-width:961px){.packs{gap:8px;justify-content:center;padding:0 0 20px}.pack{width:102px}.pack button,.pack .body{padding:0 8px 10px}.pack .crimp{margin:0 -8px}.pack .pimg{width:68px}}

@@ -9,7 +9,7 @@ function render(){const d=S.d,stage=1+d,checked=d>=1&&S.p;
  $('#stage').textContent=stage;$('#c').textContent=d;$('#n').textContent=checked?1:0;
  const earned=d*10+(d>=7?21:0);$('#earned').textContent=earned;$('#earned2').textContent=earned;$('#sun').textContent=60+earned;
  $('#line').textContent=d===0?'each one is a tiny promise to yourself':(checked?'everyone is glowing today':'lovely, keep going');
- $('#m66').style.width=Math.round((12+d)/66*100)+'%';$('#tot').textContent=12+d;
+ $('#m66').style.width=Math.round(d/66*100)+'%';$('#tot').textContent=d;
  $('#daysLeft').textContent=d>=7?'ALL SET':(d===6?'LAST DAY':(7-d)+' DAYS LEFT');
  for(let i=0;i<7;i++){const c=$('#wc'+i);c.className='cell'+(i<d?' done':(i===d&&d<7?' now':''));c.textContent=i<d?'\u2713':(i===d&&d<7?'\u2022':'');
   const t=$('#tl'+i);t.className='day'+(i<d?' done':(i===d?' now':''));}
