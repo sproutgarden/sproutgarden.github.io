@@ -54,7 +54,7 @@ nav .links{display:flex;align-items:center;gap:22px;font-weight:800;color:var(--
 .gold-in{display:flex;align-items:center;gap:60px}
 .goldcard{position:relative;width:520px;height:520px;flex-shrink:0;border-radius:40px;overflow:hidden;background:radial-gradient(circle at 50% 60%,#FFF4C8 0%,#FFE39A 45%,#F5C96A 100%);box-shadow:0 30px 70px rgba(150,100,20,.25)}
 .goldpot{position:absolute;left:50%;top:50%;width:250px;height:375px;margin:-220px 0 0 -125px}.goldpot svg{position:absolute;inset:0}
-.goldfill{clip-path:inset(100% 0 0 0);filter:sepia(1) saturate(3) hue-rotate(-12deg) brightness(1.08)}
+.goldfill{clip-path:inset(100% 0 0 0)}
 .ring{position:absolute;left:50%;top:58%;width:40px;height:40px;margin:-20px 0 0 -20px;border-radius:50%;border:3px solid var(--gold);opacity:0}
 .stamp66{position:absolute;left:34px;top:34px;width:132px;height:132px;border-radius:50%;border:5px solid #B8761A;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#B8761A;opacity:0}
 .conf66{position:absolute;left:50%;top:50%;width:10px;height:14px;border-radius:3px;opacity:0}
@@ -73,7 +73,7 @@ nav .links{display:flex;align-items:center;gap:22px;font-weight:800;color:var(--
 .loop .g1{animation:fg0 7.2s ease infinite}.loop .g2{animation:fg1 7.2s ease infinite}.loop .g3{animation:fg2 7.2s ease infinite}.loop .g4{animation:fg3 7.2s ease infinite}.loop .g5{animation:fg4 7.2s ease infinite}.loop .g6{animation:fg5 7.2s ease infinite}.loop .g7{animation:fg6 7.2s ease infinite}.loop .g8{animation:fg7 7.2s ease infinite}
 .pro{position:relative;overflow:hidden;background:linear-gradient(180deg,#2A2552 0%,#4B3B6E 60%,#6B5590 100%);color:#FFF6EA}
 .pro-in{display:flex;gap:60px;align-items:center;position:relative;z-index:2}
-.nightwin{position:relative;width:520px;height:600px;flex-shrink:0;border-radius:22px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.45)}.nightwin img{width:100%;height:100%;object-fit:cover;display:block}
+.nightwin{position:relative;width:520px;height:600px;flex-shrink:0;border-radius:22px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.45)}
 .plans{display:flex;gap:12px;margin-top:24px}
 .plan{flex:1;position:relative;text-align:left;cursor:pointer;border-radius:20px;padding:16px 18px;background:rgba(255,255,255,.92);border:2px solid transparent;color:var(--ink)}.plan.on{background:#FFF3D2;border-color:var(--gold)}.plan .price{font-size:32px}.plan.on .price{color:#8A5A16}
 .tag{position:absolute;top:-12px;left:18px;padding:3px 10px;border-radius:99px;background:var(--gold);color:#5E430B;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
@@ -124,11 +124,6 @@ footer{background:#3A3029;color:#D9CDBF;padding:34px 0;border-top:6px solid #B48
   .gphone .fr{width:min(232px,64vw);height:auto;aspect-ratio:1179/2556}
   .gphone img{object-fit:contain;background:#FFF6EA}
   .nightwin{width:100%;max-width:520px;height:auto;aspect-ratio:520/600;margin:0 auto}
-  .nightwin>div{left:auto!important;top:auto!important;width:26%}
-  .nightwin>div:nth-of-type(2){left:22%!important;bottom:7%!important;width:27%}
-  .nightwin>div:nth-of-type(3){left:55%!important;bottom:7%!important;width:30%}
-  .nightwin>.breathe{left:50%!important;bottom:10%!important;width:50%;aspect-ratio:1;height:auto!important;margin-left:-5%}
-  .nightwin>div svg{width:100%!important;height:auto!important}
   .goldcard{aspect-ratio:1;height:auto;max-height:none}
   .goldpot{width:56%;height:auto;aspect-ratio:2/3;top:46%;margin:-36% 0 0 -28%}
   .goldpot svg{width:100%!important;height:100%!important}
@@ -224,4 +219,38 @@ footer{background:#3A3029;color:#D9CDBF;padding:34px 0;border-top:6px solid #B48
 .wcard svg{display:block;width:100%;height:100%}
 .wcard.is-off *{animation-play-state:paused!important}
 
+/* ===== 1.1 launch: App Store badge, Pro tags, scenes, what's new ===== */
+.protag{display:inline-block;vertical-align:middle;margin-left:4px;padding:2px 7px;border-radius:99px;background:#2A2522;color:#FFD98A;font:800 10px/1.4 'Nunito',sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.scenes{background:linear-gradient(180deg,#FFF6EA 0%,#FFEFD6 100%)}
+.scenelist{list-style:none;margin:34px auto 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;max-width:1100px}
+.scene{background:#fff;border-radius:20px;padding:16px 18px;box-shadow:0 10px 26px rgba(74,59,48,.12)}
+.scene .sline{font-size:19px;color:#8A7968;margin-top:4px;line-height:1.15}
+.scene .sprice{margin-top:8px;font-size:13px;font-weight:800;color:#8A5A16}
+.whatsnew .newlist{list-style:none;margin:26px auto 0;padding:0;max-width:720px;display:flex;flex-direction:column;gap:12px}
+.whatsnew .newlist li{background:#fff;border-radius:18px;padding:14px 18px;box-shadow:0 8px 22px rgba(74,59,48,.1);font-size:16px;line-height:1.5}
+@media (max-width:960px){.scenelist{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.scenelist{grid-template-columns:1fr}}
 footer .wrap{flex-wrap:wrap;gap:18px}
+@media (min-width:961px){.gallery{gap:14px}.gphone .fr{width:196px;height:415px}}
+
+/* ===== painted plants in the demo, shop packets ===== */
+.pack .win .pimg{display:block;margin-bottom:-10px;position:relative;z-index:1}
+.play .pimg{animation:growpop 1.6s cubic-bezier(.3,1.4,.5,1) both}
+@keyframes growpop{0%{transform:scale(.45) translateY(10px);opacity:.2}60%{transform:scale(1.06)}100%{transform:none;opacity:1}}
+@media (prefers-reduced-motion:reduce){.play .pimg{animation:none}}
+.pack{width:128px}
+.pack .protag{display:table;margin:3px 0 0}
+@media (min-width:961px){.packs{gap:10px}.pack{width:108px}.pack .win{height:132px}.pack .pimg{width:72px;height:auto}}
+@media (min-width:961px){.packs{gap:8px;justify-content:center;padding:0 0 20px}.pack{width:102px}.pack button,.pack .body{padding:0 8px 10px}.pack .crimp{margin:0 -8px}.pack .pimg{width:68px}}
+
+/* ===== 1.1 pre-release pill: ONE class. On release day delete every element with class v11-tag and this block ===== */
+.v11-tag{display:inline-block;vertical-align:middle;margin-left:10px;padding:4px 12px;border-radius:99px;background:#FFF0C4;color:#8A5A16;border:1px dashed #E0B85A;font:700 13px/1.3 'Nunito',sans-serif;letter-spacing:.04em;text-transform:none;white-space:nowrap}
+.gphone .v11-tag{display:table;margin:2px auto 0}
+.pro li .v11-tag,.pro-in li .v11-tag{margin-left:6px;font-size:11px}
+/* painted sprites keep ~8% transparent space under the pot: let the pot touch the plank */
+.closesill .pots>svg,.sill>svg{transform:translateY(8.7%)}
+
+/* Pro window: the Moonbloom's soft halo (the app's: #9FF3FF to #B9A6F7, breathing about every 3 s) */
+.moon-glow{transform-box:fill-box;transform-origin:50% 50%}
+@media (prefers-reduced-motion:no-preference){.moon-glow{animation:moonBreathe 3s ease-in-out infinite alternate}}
+@keyframes moonBreathe{0%{transform:scale(.95);opacity:.85}100%{transform:scale(1.05);opacity:1}}
