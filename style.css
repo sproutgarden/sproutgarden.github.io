@@ -243,10 +243,6 @@ footer .wrap{flex-wrap:wrap;gap:18px}
 @media (min-width:961px){.packs{gap:10px}.pack{width:108px}.pack .win{height:132px}.pack .pimg{width:72px;height:auto}}
 @media (min-width:961px){.packs{gap:8px;justify-content:center;padding:0 0 20px}.pack{width:102px}.pack button,.pack .body{padding:0 8px 10px}.pack .crimp{margin:0 -8px}.pack .pimg{width:68px}}
 
-/* ===== 1.1 pre-release pill: ONE class. On release day delete every element with class v11-tag and this block ===== */
-.v11-tag{display:inline-block;vertical-align:middle;margin-left:10px;padding:4px 12px;border-radius:99px;background:#FFF0C4;color:#8A5A16;border:1px dashed #E0B85A;font:700 13px/1.3 'Nunito',sans-serif;letter-spacing:.04em;text-transform:none;white-space:nowrap}
-.gphone .v11-tag{display:table;margin:2px auto 0}
-.pro li .v11-tag,.pro-in li .v11-tag{margin-left:6px;font-size:11px}
 /* painted sprites keep ~8% transparent space under the pot: let the pot touch the plank */
 .closesill .pots>svg,.sill>svg{transform:translateY(8.7%)}
 
