@@ -27,8 +27,9 @@
         "If Sprout helps you grow your days, Moonrail might help you find your quiet hours. It's on the Mac App Store now."
       ],
       "button": {
-        "label": "Rate Sprout",
-        "action": "rate"
+        "label": "See Moonrail",
+        "action": "url",
+        "url": "https://sproutgarden.github.io/moonrail.html"
       }
     },
     {
