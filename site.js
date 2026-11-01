@@ -1,6 +1,6 @@
 (function(){
 const $=(s)=>document.querySelector(s), $$=(s)=>document.querySelectorAll(s);
-const S={d:0,p:false,week:1,shelf:0,plan:'yr',cur:'INR'};
+const S={d:0,p:false,week:1,shelf:0,plan:'yr',cur:'USD'};
 const titles=['Plant a habit','Day one. A sprout.','Leaves unfold','Halfway there','A trunk appears','Taking shape','One more day','It bloomed!'];
 const story=['Give it a name and a weekly goal, like every day. A seed goes into its pot right away. Tap Monday.','One check-in, +10 Sunlight on the spot, and the seed shows its first leaves.','Second check-in. The bonsai stretches up and its leaves unfold.','Three days in. Nothing to break, nothing to lose; just a plant that keeps growing.','The little trunk thickens and bends. The sky outside has turned golden.','Pads of green appear on the branches. Almost a real bonsai now.','Saturday night. One more check-in and it blooms.','Sunday hits the weekly goal: full bloom, a +21 bonus, and the pot moves to your shelf for keeps. Press next for week two.'];
 const labels=['Before you start','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];

@@ -250,3 +250,11 @@ footer .wrap{flex-wrap:wrap;gap:18px}
 .moon-glow{transform-box:fill-box;transform-origin:50% 50%}
 @media (prefers-reduced-motion:no-preference){.moon-glow{animation:moonBreathe 3s ease-in-out infinite alternate}}
 @keyframes moonBreathe{0%{transform:scale(.95);opacity:.85}100%{transform:scale(1.05);opacity:1}}
+
+/* ===== 1.2: Your garden, in stats ===== */
+.stats{background:linear-gradient(180deg,#F1F6E8,#FFF6EA)}
+.newpill{display:table;margin:0 auto 12px;padding:7px 16px;border-radius:99px;background:#4F8A42;color:#fff;font:800 13px/1 'Nunito',sans-serif;letter-spacing:.16em;text-transform:uppercase;box-shadow:0 4px 10px rgba(79,138,66,.25)}
+.stats .lead{text-align:center;max-width:720px;margin:14px auto 0}
+.stats .gallery{margin-top:30px}
+.stats .smallprint{text-align:center;max-width:640px;margin:0 auto;font-size:14px;font-weight:700;line-height:1.5;color:var(--soft)}
+@media (max-width:480px){#stats .title:after{content:"swipe sideways \2192";display:block;font-family:Caveat,'Comic Sans MS',cursive;font-weight:600;font-size:24px;color:var(--peach);margin-top:10px}}
