@@ -17,6 +17,21 @@
       }
     },
     {
+      "id": "moonrail-2026-11",
+      "date": "2026-11-01",
+      "kind": "update",
+      "title": "a little train for your Mac 🚂",
+      "excerpt": "Moonrail, a cozy focus timer for your Mac's menu bar, is on the Mac App Store now.",
+      "body": [
+        "I made something new: Moonrail, a cozy focus timer for your Mac's menu bar. Your focus becomes a night train ride, the moon moves across the sky as you work, and Momo the penguin keeps you company at every station.",
+        "If Sprout helps you grow your days, Moonrail might help you find your quiet hours. It's on the Mac App Store now."
+      ],
+      "button": {
+        "label": "Rate Sprout",
+        "action": "rate"
+      }
+    },
+    {
       "id": "v11-2026-10",
       "date": "2026-10-18",
       "kind": "update",
