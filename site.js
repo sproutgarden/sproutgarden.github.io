@@ -37,6 +37,17 @@ $$('[data-plan]').forEach(b=>b.addEventListener('click',()=>{S.plan=b.dataset.pl
 $$('[data-cur]').forEach(b=>b.addEventListener('click',()=>{S.cur=b.dataset.cur;renderPro();}));
 $('#replay66').addEventListener('click',()=>{const g=$('#goldcard');g.classList.remove('play66');void g.offsetWidth;g.classList.add('play66');});
 render();renderPro();
+/* November sale: while sale.json says a sale is live, the $ prices are the App Store's sale prices and "Pro from"
+   says so; the ₹ option stays as it is. No sale (or no file) leaves the page as written. Keep SALE_USD equal to
+   the half prices set in App Store Connect. */
+const SALE_USD={yr:['$9.99','/ year'],mo:['$1.49','/ month'],life:['$19.99','once']};
+if(window.fetch)fetch('sale.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(s=>{
+ if(!s||s.active!==true||!s.start||!s.end)return;
+ const day=(t,end)=>Date.parse(t.length===10?t+(end?'T23:59:59Z':'T00:00:00Z'):t),now=Date.now();
+ if(!(now>=day(s.start,false)&&now<=day(s.end,true)))return;
+ P.USD=SALE_USD;renderPro();
+ $$('[data-from]').forEach(e=>{e.textContent='Free to grow · Pro from '+SALE_USD.mo[0]+' · 50% off in November';});
+}).catch(()=>{});
 })();
 
 /* play the golden celebration when it scrolls into view */

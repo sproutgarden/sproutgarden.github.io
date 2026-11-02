@@ -1,0 +1,12 @@
+{
+  "active": true,
+  "id": "nov2026",
+  "start": "2026-11-03T08:00:00Z",
+  "end": "2026-11-30T23:59:59Z",
+  "badge": "50% OFF",
+  "title": "November sale",
+  "line": "half price, this month only",
+  "excludeCountries": [
+    "IND"
+  ]
+}
