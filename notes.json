@@ -2,6 +2,25 @@
   "version": 1,
   "notes": [
     {
+      "id": "sale-2026-11",
+      "date": "2026-11-02",
+      "kind": "season",
+      "title": "half price, all November 🍂",
+      "excerpt": "Sprout Pro is 50% off for all of November.",
+      "body": [
+        "For all of November, Sprout Pro is 50% off: your whole story in stats, every seed and scene, and as many habits as you like. If you've been thinking about it, this is a lovely time to grow."
+      ],
+      "button": {
+        "label": "See Sprout Pro",
+        "action": "pro"
+      },
+      "minAppVersion": "1.2.1",
+      "expires": "2026-11-30",
+      "excludeCountries": [
+        "IND"
+      ]
+    },
+    {
       "id": "v12-2026-11",
       "date": "2026-11-02",
       "kind": "update",
